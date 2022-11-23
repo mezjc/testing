@@ -337,7 +337,7 @@ height: 40rem;
   font-size: 2.8em;
 }
 }
-@media (max-width: 320px){
+@media (max-width: 425px){
   .footer-container {
     grid-template-columns: repeat(1, 1fr);
     justify-items: center;
@@ -363,6 +363,10 @@ width: 200px;
   .text-quienes-somos h2{
     font-size: 2em;
     margin: 10px 50px;
+  }
+  .text-politicas-calidad h2{
+    font-size: 2em;
+    margin: 4px 121px;
   }
   .showcase{
     flex-direction: column;
@@ -393,10 +397,14 @@ width: 200px;
     padding: 0;
   }
   .text-quienes-somos h2 {
-    padding: 44px 0;
+    padding: 49px 0;
   }
   .diferencias{
     flex-direction: column;
     margin: 0;
+    align-items: center;
+  }
+  .mision-vision{
+    justify-content: space-evenly;
   }
 }
