@@ -20,7 +20,7 @@ ul {
 }
 .container {
   width: 100%;
-  margin: auto;
+  margin: 0;
 }
 /*navigation*/
 .nav-main {
@@ -28,7 +28,7 @@ ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 15vh;
+  height: 12vh;
   padding: 20px 0;
 }
 .active {
@@ -40,13 +40,13 @@ ul {
 }
 .active .nav-logo {
   height: 10vh;
-  width: 20em;
-  padding-left: 25px;
+  width: 10em;
+  padding-left: 50px;
 }
 .nav-logo {
-  width: 30em;
-  height: 15vh;
-  padding-left: 20px;
+  width: 25em;
+  height: 13vh;
+  padding-left: 50px;
 }
 /*nav rigth*/
 .nav-main ul {
@@ -81,19 +81,18 @@ ul {
 .showcase {
   display: none;
   width: 100%;
-  height: 680px;
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url("../img/p2.jpg") no-repeat center center/cover;
+  height: 760px;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url("../img/img-principal.jpg") no-repeat bottom center/cover;
   margin-bottom: 20px;
   padding: 50px;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-end;
   justify-content: center;
 }
 .showcase h2 {
-  font-size: 250px;
-
+  font-size: 10rem;
   font-weight: 500;
   font-family: "Teko", sans-serif;
   color: #10388f;
@@ -102,86 +101,107 @@ ul {
   color: #ffffff;
   font-family: "Teko", sans-serif;
   font-size: 50px;
+  padding-right: 10rem;
 }
+ /* mision-vision  */
+.mision-vision{
+  display: flex;
+  align-items: center;
+  padding: 8rem 10rem 8rem 15rem;
+  justify-content: space-between;
+  font-family: "Teko", sans-serif;
+}
+.texto-mision h3{
+  font-size: 2.0rem;
+  color: #FB2D0C;
+  font-family: "Teko", sans-serif;
+}
+.texto-mision p{
+  font-size: 1.3rem;
+  padding-top: 10px;
+  padding-bottom: 3rem;
+  width: 30rem;
+  text-align: justify;
+  color: #11398C;
+}
+
+.mision-vision img{
+border-radius: 10%;
+height: 40rem;
+}
+/* valor-agregado */
+.valor-agregado{
+  display: flex;
+  text-align: center;
+  justify-content: space-around;
+  padding: 50px 30px;
+  
+}
+.valores{
+width: 300px;
+}
+.valores i{
+  background: #FB2D0C;
+  border-radius: 50%;
+  padding: 15px 15px;
+}
+.valores h3{
+  font-family: "Teko", sans-serif;
+}
+.valores p{
+  padding-top: 20px;
+  font-size: 1.2em;
+}
+
 /* texto-centro */
-.texto-2 {
+.texto-2 h2{
   text-align: center;
   font-family: "Teko", sans-serif;
-  font-size: 50px;
+  font-size: 4rem;
 }
-/* new cards */
-.new-cards {
-  display: grid;
-  grid-template-columns: repeat(2, 2fr);
-  gap: 10px;
-  margin: 10px 0px;
-  text-align: center;
-  font-family: "Teko", sans-serif;
+/* slider */
+.carrusel{
+  height: 550px;
+  display: flex;
+  align-items: center;
 }
-.new-cards .cards {
-  height: 587px;
-  padding: 50px 20px;
-  margin-bottom: 139px;
+.carrusel-item p{
+  height: 25px;
+  margin: 0;
+  display: flex;
+  justify-content: space-evenly;
+  background-color: black;
+  color: white;
 }
-.new-cards img {
+.carrusel-items{
+  display: flex;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  padding: 30px 0px;
+}
+.carrusel-item{
+  min-width: 400px;
+  max-width: 400px;
+  height: 400px;
+  margin: 10px;
+}
+
+.carrusel-item img{
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-
-.new-cards h3 {
-  font-size: 35px;
-  margin: 10px 0;
-  color: #10388f;
-}
-.cards-banner-one {
-  width: 100%;
-  height: 600px;
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url("../img/img-central.png");
-  background-size: cover;
-  background-position: center center;
-  margin: 80px 0;
-}
-.cards-banner-one .content {
-  text-align: center;
-}
-.cards-banner-one p,
-.cards-banner-one h2 {
-  font-family: "Teko", sans-serif;
-  color: white;
-  font-size: 8rem;
-  text-align: center;
-  font-weight: 500;
+.carrusel-item:hover{
+  min-width: 410px;
+  max-width: 410px;
+  height: 410px;
+  transition: 0.4s;
+  
 }
 
-.cards-banner-one .btn {
-  font-size: 50px;
-  box-shadow: 0px 0px 0px 2px #9fb4f2;
-  background: linear-gradient(to bottom, #10388f 5%, #476e9e 100%);
-  background-color: #7892c2;
-  border-radius: 10px;
-  border: 1px solid #4e6096;
-  display: inline-block;
-  cursor: pointer;
-  color: #ffffff;
-  font-family: "Teko", sans-serif;
-  font-size: 25px;
-  padding: 12px 37px;
-  text-decoration: none;
-  text-shadow: 0px 1px 0px #283966;
-}
-.cards-banner-one .btn:hover {
-  background: linear-gradient(to bottom, #476e9e 5%, #7892c2 100%);
-  background-color: #476e9e;
-}
-.cards-banner-one .btn:active {
-  position: relative;
-  top: 1px;
-}
 
 /* empresas */
-.trabajan-seguros {
+.trabajan-seguros h3{
   text-align: center;
   font-family: "Teko", sans-serif;
   font-size: 70px;
@@ -190,6 +210,7 @@ ul {
   display: grid;
   grid-template-columns: repeat(6, 2fr);
   align-items: center;
+  justify-items: center;
   margin-bottom: 100px;
   padding: 0 10px;
 }
@@ -218,6 +239,7 @@ ul {
 }
 .contacto h3 {
   font-size: 50px;
+  font-family: "Teko", sans-serif;
 }
 
 /* social */
@@ -246,22 +268,27 @@ ul {
 
 /* footer links */
 .footer-links {
-  background-color: #ff270af1;
-  color: #616161;
-
+  background-color: #1c2024;
   padding: 35px 0;
+  font-family: roboto;
+}
+
+.footer-links li,h3,h2{
+  padding-bottom: 15px;
+  font-family: Open Sans;
+}
+.footer-links img{
+  width: 20vw;
+  
 }
 .footer-container h3 {
-  color: #0c378d;
-  font-size: 20px;
-}
-h3 i {
-  color: #0c378d;
-  padding-right: 10px;
+  color: #e2e2e2;
+  font-size: 17px;
+  font-weight: 200;
 }
 .footer-container {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns:  1fr 0.5fr 0.5fr 1fr;
   gap: 10px;
   align-items: flex-start;
   justify-content: center;
@@ -274,8 +301,44 @@ h3 i {
   .showcase h2 {
     font-size: 150px;
   }
+  .mision-vision{
+    padding-left: 8rem;
+  }
+  .mision-vision img{
+    height:35em;
+  }
 }
 @media (max-width: 1230px) {
+  .showcase {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url("../img/img-principal.jpg") no-repeat left center/cover;
+  }
+  .mision-vision{
+    display: flex;
+    padding: 4rem 5rem 7rem 7rem;
+  }
+  .texto-mision h3{
+    font-size: 1.7rem;
+  }
+  .texto-mision p{
+    font-size: 1.1rem;
+    padding-bottom: 3rem;
+    width: 20rem;
+  }
+  .mision-vision img{
+    
+      height: 30em;
+    }
+    .carrusel{
+      height: 300px;
+      margin-bottom: 30px;
+    }
+    .carrusel-item{
+      min-width: 300px;
+      max-width: 300px;
+      height: 300px;
+      margin: 0;
+    }
   .nav-main ul li {
     padding: 5px 0;
     padding-right: 20px;
@@ -296,11 +359,67 @@ h3 i {
   .nav-logo {
     width: 13em;
   }
+  .showcase {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url("../img/img-principal.jpg") no-repeat left center/cover;
+  }
+  .mision-vision img{
+    display: none;
+  }
   .new-cards {
     grid-template-columns: repeat(1, 1fr);
   }
+  .mision-vision{
+    display: flex;
+    padding: 7rem 0rem 7rem 3rem;
+    justify-content: center;
+  }
+  .texto-mision h3{
+    font-size: 1.6rem;
+  }
+  .texto-mision p{
+    font-size: 1.4rem;
+    padding-bottom: 3rem;
+    width: 20rem;
+  }
+
+  /* slider */
+  .carrusel{
+    height: 60vh;
+  }
+  .carrusel-item{
+    min-width: 200px;
+    max-width: 200px;
+    height: 200px;
+    margin: 10px;
+  }
+  
+  .carrusel-item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .carrusel-item p{
+    height: 31px;
+    margin: 0;
+    font-size: 0.7rem;
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    text-align: center;
+    color: white;
+  }
+  .valores h3{
+    font-family: "Teko", sans-serif;
+    font-size: 1.2;
+  }
+  .valores p{
+    padding-top: 20px;
+    font-size: 1.0em;
+  }
   .empresas {
     grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
   }
   .nav-main a {
     color: white;
@@ -347,10 +466,22 @@ h3 i {
     width: 120px;
     gap: 20px;
   }
+  .footer-links img{
+    display: none;
+    
+  }
+  .footer-container {
+    display: grid;
+    grid-template-columns: 0fr 0.5fr 0.5fr 1fr;
+    gap: 10px;
+    align-items: flex-start;
+    justify-content: center;
+}
 }
 @media (max-width: 500px) {
   .footer-container {
     grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
   }
   .footer-container ul {
     margin: 0;
@@ -361,6 +492,24 @@ h3 i {
   }
   .showcase p {
     font-size: 30px;
+    padding-right: 7rem;
+  }
+  .mision-vision{
+    display: flex;
+    padding-left: 1rem;
+    justify-content: center;
+  }
+  .valor-agregado{
+    flex-direction: column;
+    align-items: center;
+  }
+  .texto-mision h3{
+    font-size: 1.2rem;
+  }
+  .texto-mision p{
+    font-size: 1.1rem;
+    padding-bottom: 3rem;
+    width: 16rem;
   }
   .contacto img {
     width: 100%;
@@ -371,5 +520,8 @@ h3 i {
   .contacto p {
     letter-spacing: 0;
     font-size: 20px;
+  }
+  .diferencias .card{
+    width: 12rem;
   }
 }

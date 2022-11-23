@@ -1,0 +1,402 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "PT Sans", sans-serif;
+  font-size: 16;
+}
+a {
+  text-decoration: none;
+  font-family: "Teko", sans-serif;
+  font-size: 1.5rem;
+  color: #10388f;
+}
+
+ul {
+  list-style: none;
+}
+.container {
+  width: 100%;
+  margin: 0;
+}
+/*navigation*/
+.nav-main {
+  font-size: 17px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 12vh;
+  padding: 20px 0;
+  z-index: 100;
+}
+.active {
+  background-color: rgb(255, 255, 255);
+  position: fixed;
+  width: 100%;
+  transition: 0.6s;
+  height: 10vh;
+}
+.active .nav-logo {
+  height: 10vh;
+  width: 15em;
+  padding-left: 50px;
+}
+.nav-logo {
+  width: 25em;
+  height: 13vh;
+  padding-left: 50px;
+}
+/*nav rigth*/
+.nav-main ul {
+  display: flex;
+}
+.nav-main ul li {
+  padding: 10px;
+  padding-right: 40px;
+}
+
+.nav-main ul li a:hover {
+  border-bottom: 2px solid #10388f;
+  color: #fb2e0f;
+}
+.nav-main ul.nav-menu {
+  flex: 0;
+}
+.menu-btn {
+  position: absolute;
+  cursor: pointer;
+  top: 18px;
+  right: 30px;
+  z-index: 2;
+  font-size: 2rem;
+  display: none;
+}
+.nav-main .active {
+  background-color: #10388f;
+}
+
+/*showcase*/
+.showcase {
+
+display: flex;
+align-items: center;
+justify-content: space-around;
+}
+.showcase img{
+  width: 33%;
+  border-radius: 15px;
+  object-fit: cover;
+}
+.showcase p{
+  text-align: justify;
+  padding: 0 55px;
+  font-size: 20px;
+  font-family: "roboto", sans-serif;
+}
+.showcase h2 {
+  text-align: center;
+  font-size: 5rem;
+  font-family: "Teko", sans-serif;
+  color: #10388f;
+  
+} 
+/* quienes somos */
+.quienes-somos{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 0 100px 100px 100px;
+  
+}
+.quienes-somos img{
+  width: 30%;
+  border-radius: 15px;
+  height: 500px;
+  object-fit: cover;
+  
+}
+.quienes-somos .img-logo{
+height: 230px;
+width: auto;
+}
+.text-quienes-somos h2{
+  padding: 60px 0;
+  text-align: center;
+  font-size: 4rem;
+  font-family: "Teko", sans-serif;
+  color: white;
+  height: 200px;
+  background-color: #10388f;
+  margin: 30px 200px;
+  border-radius: 20px;
+}
+.quienes-somos p{
+  text-align: justify;
+  padding: 0 55px;
+  font-size: 20px;
+  font-family: "roboto", sans-serif;
+}
+.quienes-somos-rigth{
+  text-align: center;
+}
+/* politicas calidad */
+.text-politicas-calidad h2{
+  padding: 60px 0;
+  text-align: center;
+  font-size: 4rem;
+  font-family: "Teko", sans-serif;
+  color: white;
+  height: 200px;
+  background-color: #fb2e0f;
+  margin: 30px 200px;
+  border-radius: 20px;
+}
+/* politicas */
+img .politicas{
+  object-fit: cover;
+}
+.quienes-somos i{
+width: 500%;
+}
+
+ /* mision-vision  */
+.mision-vision{
+  display: flex;
+  align-items: center;
+  padding: 8rem 10rem 8rem 15rem;
+  justify-content: space-between;
+  font-family: "Teko", sans-serif;
+}
+.texto-mision h3{
+  font-size: 2.0rem;
+  color: #FB2D0C;
+  font-family: "Teko", sans-serif;
+}
+.texto-mision p{
+  font-size: 1.3rem;
+  padding-top: 10px;
+  padding-bottom: 3rem;
+  width: 30rem;
+  text-align: justify;
+  color: #11398C;
+}
+
+.mision-vision img{
+border-radius: 10%;
+height: 40rem;
+}
+/* Marcamos La Diferencia */
+.diferencias{
+  margin: 50px 50px 60px 50px;
+  display: flex;
+  justify-content: space-around;
+}
+/* video */
+.video{
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+/* footer links */
+.footer-links {
+  background-color: #1c2024;
+  padding: 35px 0;
+  font-family: roboto;
+}
+
+.footer-links li,h3,h2{
+  padding-bottom: 15px;
+  font-family: Open Sans;
+}
+.footer-links img{
+  width: 20vw;
+  
+}
+.footer-container h3 {
+  color: #e2e2e2;
+  font-size: 17px;
+  font-weight: 200;
+}
+.footer-container {
+  display: grid;
+  grid-template-columns:  1fr 0.5fr 0.5fr 1fr;
+  gap: 10px;
+  align-items: flex-start;
+  justify-content: center;
+}
+.footer-container ul {
+  margin: 0 auto;
+}
+@media (max-width: 1230px){
+  .text-quienes-somos h2{
+    height: 150px;
+    padding: 35px 0;
+  }
+  .text-politicas-calidad h2{
+    height: 150px;
+    padding: 35px 0;
+  }
+  .text-quienes-somos h2{
+    height: 150px;
+    padding: 40px 0;
+    font-size: 3.6rem;
+  }
+  .mision-vision{
+    display: flex;
+    padding: 4rem 5rem 7rem 7rem;
+  }
+  .texto-mision h3{
+    font-size: 1.7rem;
+  }
+  .texto-mision p{
+    font-size: 1.1rem;
+    padding-bottom: 3rem;
+    width: 20rem;
+  }
+  .mision-vision img{
+    height: 30em;
+  }
+  .card{
+    
+  }
+}
+@media (max-width: 800px){
+  .nav-main ul.nav-menu {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #2f3640;
+    height: 100%;
+    padding: 30px;
+    opacity: 0.9;
+    transform: translateX(-400px);
+    transition: transform 0.5s ease-in-out;
+  }
+  .active {
+  }
+  .nav-main ul.nav-menu.show {
+    transform: translateX(-20px);
+  }
+  .nav-main ul.nav-menu.show {
+    transform: translateX(-20px);
+  }
+  .nav-main ul.nav-menu li {
+    padding: 20px;
+    font-size: 14px;
+  }
+  .nav-main ul.nav-menu-right {
+    margin-right: 50px;
+  }
+  .menu-btn {
+    display: block;
+  }
+  .menu-btn:hover {
+    opacity: 0.5;
+  }
+  .nav-logo{
+    width: 12em;
+  }
+  /* showcase */
+  .showcase h2{
+    font-size: 3em;
+  }
+  .showcase p{
+    font-size: 1em;
+  }
+/* quines-somos */
+.text-quienes-somos h2{
+  font-size: 3em;
+}
+.quienes-somos .img-logo{
+  height: 130px;
+}
+.quienes-somos p{
+  font-size: 15px;
+}
+  /* footer-link */
+  .footer-links img{
+    display: none;
+    
+  }
+  .footer-container {
+    display: grid;
+    grid-template-columns: 0fr 0.5fr 0.5fr 1fr;
+    gap: 10px;
+    align-items: flex-start;
+    justify-content: center;
+}
+/* mision-vision */
+.mision-vision{
+  padding: 20px;
+}
+
+.text-politicas-calidad h2{
+  font-size: 2.8em;
+}
+}
+@media (max-width: 320px){
+  .footer-container {
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+  }
+  .footer-container ul {
+    margin: 0;
+    padding-left: 20px;
+  }
+  .mision-vision img{
+    display: none;
+  }
+  .video iframe{
+width: 200px;
+  }
+  .texto-mision h3{
+    font-size: 1.2rem;
+  }
+  .texto-mision p{
+    font-size: 1.1rem;
+    padding-bottom: 3rem;
+    width: 16rem;
+  }
+  .text-quienes-somos h2{
+    font-size: 2em;
+    margin: 10px 50px;
+  }
+  .showcase{
+    flex-direction: column;
+  }
+  .showcase p{
+    font-size: 15px;
+    padding: 0 10px;
+    
+  }
+  .text-quienes-somos h2 {
+    padding: 56px 0;
+  }
+  .showcase img{
+    width: 300px;
+  }
+  .quienes-somos{
+    flex-direction: column;
+    margin: 10px 50px;
+  }
+  .quienes-somos .img-logo{
+    height: 100px;
+  }
+  .quienes-somos img{
+    width: 250px;
+  }
+  .quienes-somos p {
+    font-size: 15px;
+    padding: 0;
+  }
+  .text-quienes-somos h2 {
+    padding: 44px 0;
+  }
+  .diferencias{
+    flex-direction: column;
+    margin: 0;
+  }
+}

@@ -1,0 +1,241 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "PT Sans", sans-serif;
+  font-size: 16;
+}
+a {
+  text-decoration: none;
+  font-family: "Teko", sans-serif;
+  font-size: 1.5rem;
+  color: #10388f;
+}
+
+ul {
+  list-style: none;
+}
+.container {
+  width: 100%;
+  margin: 0;
+}
+/*navigation*/
+.nav-main {
+  font-size: 17px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 12vh;
+  padding: 20px 0;
+}
+.active {
+  background-color: rgb(255, 255, 255);
+  position: fixed;
+  width: 100%;
+  transition: 0.6s;
+  height: 10vh;
+}
+.active .nav-logo {
+  height: 10vh;
+  width: 10em;
+  padding-left: 50px;
+}
+.nav-logo {
+  width: 25em;
+  height: 13vh;
+  padding-left: 50px;
+}
+/*nav rigth*/
+.nav-main ul {
+  display: flex;
+}
+.nav-main ul li {
+  padding: 10px;
+  padding-right: 40px;
+}
+
+.nav-main ul li a:hover {
+  border-bottom: 2px solid #10388f;
+  color: #fb2e0f;
+}
+.nav-main ul.nav-menu {
+  flex: 0;
+}
+.menu-btn {
+  position: absolute;
+  cursor: pointer;
+  top: 18px;
+  right: 30px;
+  z-index: 2;
+  font-size: 2rem;
+  display: none;
+}
+.nav-main .active {
+  background-color: #10388f;
+}
+
+.showcase{
+  display: grid;
+  grid-template-columns: 5fr 2fr;
+  justify-content: space-between;
+  height: 400px;
+}
+.showcase .text{
+  justify-content: center;
+  text-align: center; 
+  display: flex;
+  align-items: center;
+  font-family: "Teko", sans-serif;
+}
+.text h3{
+  font-size: 100px;
+  font-family: "Teko", sans-serif;
+  color: #10388f;
+}
+.showcase .imagen{
+  width:500px;
+  background: #2980B9;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #FFFFFF, #6DD5FA, #297fb96e);  
+  background: linear-gradient(to right, #fffffffb, #6dd4fa52, #297fb9),url("../img/negocios.jpg")no-repeat top center/cover;
+}
+.clientes{
+  justify-content: center;
+  height: 200px;
+  align-items: center;
+}
+.clientes h3{
+  font-size: 40px;
+  text-align: center;
+  padding: 50px 0 30px 0;
+  font-family: "Teko", sans-serif;
+  color: #10388f;
+}
+.clientes i{
+  color: #fb2e0f;
+  width: 200px;
+  font-size: 40px;
+}
+.clientes p{
+  font-size: 23px;
+  padding: 0 300px 40px 300px;
+  text-align: justify;
+}
+/* empresas */
+.trabajan-seguros h3{
+  text-align: center;
+  font-family: "Teko", sans-serif;
+  font-size: 70px;
+}
+.empresas {
+
+  display: grid;
+  grid-template-columns: repeat(6, 2fr);
+  align-items: center;
+  justify-items: center;
+  margin-bottom: 100px;
+  padding: 70px 10px;
+}
+.empresas img {
+  width: 150px;
+  gap: 20px;
+}
+/* footer */
+.footer-links {
+  background-color: #1c2024;
+  padding: 35px 0;
+  font-family: roboto;
+}
+
+.footer-links li,h3,h2{
+  padding-bottom: 15px;
+  font-family: Open Sans;
+}
+.footer-links img{
+  width: 20vw;
+  
+}
+.footer-container h3 {
+  color: #e2e2e2;
+  font-size: 17px;
+  font-weight: 200;
+}
+.footer-container {
+  display: grid;
+  grid-template-columns:  1fr 0.5fr 0.5fr 1fr;
+  gap: 10px;
+  align-items: flex-start;
+  justify-content: center;
+}
+.footer-container ul {
+  margin: 0 auto;
+}
+@media (max-width: 1024px){
+.clientes p{
+  padding: 0 50px;
+}
+.empresas {
+  grid-template-columns: repeat(3, 1fr);
+}
+}
+@media (max-width: 800px){
+  .nav-main a {
+    color: white;
+  }
+  .nav-main ul li a:hover {
+    border-bottom: 2px solid white;
+    color: #fb2e0f;
+  }
+  .nav-main ul.nav-menu {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #2f3640;
+    height: 100%;
+    padding: 30px;
+    opacity: 0.9;
+    transform: translateX(-400px);
+    transition: transform 0.5s ease-in-out;
+  }
+  .active {
+  }
+  .nav-main ul.nav-menu.show {
+    transform: translateX(-20px);
+  }
+  .nav-main ul.nav-menu.show {
+    transform: translateX(-20px);
+  }
+  .nav-main ul.nav-menu li {
+    padding: 20px;
+    font-size: 14px;
+  }
+  .nav-main ul.nav-menu-right {
+    margin-right: 50px;
+  }
+  .menu-btn {
+    display: block;
+  }
+  .menu-btn:hover {
+    opacity: 0.5;
+  }
+  .text h3 {
+    font-size: 50px;
+  }
+  .empresas {
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+  }
+  .footer-links img{
+    display: none;
+    
+  }
+  .footer-container {
+    display: grid;
+    grid-template-columns: 0fr 0.5fr 0.5fr 1fr;
+    gap: 10px;
+    align-items: flex-start;
+    justify-content: center;
+}
+}
