@@ -425,8 +425,7 @@ margin-right: 250px;
     transform: translateX(-400px);
     transition: transform 0.5s ease-in-out;
   }
-  .active {
-  }
+
   .nav-main ul.nav-menu.show {
     transform: translateX(-20px);
   }
