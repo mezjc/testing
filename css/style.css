@@ -40,7 +40,7 @@ ul {
 }
 .active .nav-logo {
   height: 10vh;
-  width: 10em;
+  width: 14em;
   padding-left: 50px;
 }
 .nav-logo {
@@ -92,16 +92,22 @@ ul {
   justify-content: center;
 }
 .showcase h2 {
-  font-size: 10rem;
-  font-weight: 500;
-  font-family: "Teko", sans-serif;
+  font-size: 15rem;
+  font-weight:500;
+  padding-right: 300px;
+  font-family: "teko", sans-serif;
   color: #10388f;
+  padding-bottom: 0;
+  font-style: italic;
 }
 .showcase p {
   color: #ffffff;
   font-family: "Teko", sans-serif;
   font-size: 50px;
   padding-right: 10rem;
+}
+.showcase span{
+  color: #ED1C24;
 }
  /* mision-vision  */
 .mision-vision{
@@ -236,10 +242,11 @@ width: 300px;
 .contacto p {
   font-size: 30px;
   letter-spacing: 2px;
+  color: #11398f;
 }
 .contacto h3 {
   font-size: 50px;
-  font-family: "Teko", sans-serif;
+  color: #10388f;
 }
 
 /* social */
@@ -268,7 +275,8 @@ width: 300px;
 
 /* footer links */
 .footer-links {
-  background-color: #1c2024;
+  background: #031e41;
+  /* background-color: #1c2024; */
   padding: 35px 0;
   font-family: roboto;
 }
@@ -298,9 +306,7 @@ width: 300px;
 }
 
 @media (max-width: 1440px) {
-  .showcase h2 {
-    font-size: 150px;
-  }
+
   .mision-vision{
     padding-left: 8rem;
   }
@@ -312,6 +318,12 @@ width: 300px;
   .showcase {
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
     url("../img/img-principal.jpg") no-repeat left center/cover;
+  }
+  .showcase h2{
+    padding-right: 0;
+  }
+  .showcase p{
+    padding-right: 0;
   }
   .mision-vision{
     display: flex;
@@ -362,6 +374,10 @@ width: 300px;
   .showcase {
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
     url("../img/img-principal.jpg") no-repeat left center/cover;
+    align-items: flex-start;
+  }
+  .showcase h2{
+    font-size: 200px;
   }
   .mision-vision img{
     display: none;

@@ -165,8 +165,8 @@ width: 500%;
 .mision-vision{
   display: flex;
   align-items: center;
-  padding: 8rem 10rem 8rem 15rem;
-  justify-content: space-between;
+  padding: 5rem 6rem;
+  justify-content: space-around;
   font-family: "Teko", sans-serif;
 }
 .texto-mision h3{
@@ -185,7 +185,7 @@ width: 500%;
 
 .mision-vision img{
 border-radius: 10%;
-height: 40rem;
+height: 34rem;
 }
 /* Marcamos La Diferencia */
 .diferencias{
@@ -201,7 +201,7 @@ height: 40rem;
 
 /* footer links */
 .footer-links {
-  background-color: #1c2024;
+  background-color: #031e41;
   padding: 35px 0;
   font-family: roboto;
 }
@@ -361,14 +361,14 @@ width: 200px;
   }
   .text-politicas-calidad h2{
     font-size: 2em;
-    margin: 4px 121px;
+    margin: 4px 80px;
   }
   .showcase{
     flex-direction: column;
   }
   .showcase p{
     font-size: 15px;
-    padding: 0 10px;
+    padding: 0 50px;
     
   }
   .text-quienes-somos h2 {
@@ -386,6 +386,7 @@ width: 200px;
   }
   .quienes-somos img{
     width: 250px;
+object-fit: cover;
   }
   .quienes-somos p {
     font-size: 15px;

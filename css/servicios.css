@@ -231,9 +231,11 @@ ul {
 .contacto p {
   font-size: 30px;
   letter-spacing: 2px;
+  color: #11398f;
 }
 .contacto h3 {
   font-size: 50px;
+  color: #10388f;
 }
 
 /* social */
@@ -295,7 +297,7 @@ ul {
 
 /* footer links */
 .footer-links {
-  background-color: #1c2024;
+  background-color: #031e41;
   padding: 35px 0;
   font-family: roboto;
 }
@@ -463,6 +465,7 @@ margin-right: 250px;
   .slider__container {
     grid-template-columns: 20px 242px 20px;
     justify-items: center;
+    padding: 0 43px;
   }
   .slider__arrow {
     width: 100%;
