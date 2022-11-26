@@ -225,8 +225,6 @@ ul {
     transform: translateX(-400px);
     transition: transform 0.5s ease-in-out;
   }
-  .active {
-  }
   .nav-main ul.nav-menu.show {
     transform: translateX(-20px);
   }
@@ -240,6 +238,9 @@ ul {
   .nav-main ul.nav-menu-right {
     margin-right: 50px;
   }
+  .nav-main ul.nav-menu li a{
+    color: white; 
+    }
   .menu-btn {
     display: block;
   }
@@ -260,7 +261,7 @@ ul {
 }
 
 }
-@media (max-width: 320px){
+@media (max-width: 425px){
   .footer-container {
     grid-template-columns: repeat(1, 1fr);
     justify-items: center;
@@ -271,6 +272,11 @@ ul {
   }
   .contact-wrapper{
     flex-direction: column;
+    display: flex;
+    justify-content: space-around;
+    box-shadow: 0 0 20px 0 rgba(255,255,255 .3);
+    flex-direction: column;
+    align-items: center;
   }
   .showcase h3{
     font-size: 30px;
@@ -280,6 +286,7 @@ ul {
   }
   .redes-sociales{
     flex-direction: column;
+    align-items: center;
   }
   .contact h3{
     font-size: 18px;

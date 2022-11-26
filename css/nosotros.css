@@ -281,6 +281,10 @@ height: 34rem;
   .nav-main ul.nav-menu li {
     padding: 20px;
     font-size: 14px;
+    
+  }
+  .nav-main ul.nav-menu li a{
+  color: white; 
   }
   .nav-main ul.nav-menu-right {
     margin-right: 50px;
