@@ -378,6 +378,10 @@ width: 300px;
   }
   .showcase h2{
     font-size: 200px;
+    padding-left: 330px;
+  }
+  .showcase p {
+    padding-left: 440px;
   }
   .mision-vision img{
     display: none;
@@ -503,12 +507,17 @@ width: 300px;
     margin: 0;
     padding-left: 20px;
   }
+  .showcase  {
+    padding: 17px;
+  }
   .showcase h2 {
     font-size: 70px;
+    padding-left: 0px;
   }
   .showcase p {
     font-size: 30px;
-    padding-right: 7rem;
+    padding-right: 9rem;
+    padding-left: 0px;
   }
   .mision-vision{
     display: flex;

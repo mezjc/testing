@@ -39,12 +39,12 @@ ul {
 }
 .active .nav-logo {
   height: 10vh;
-  width: 10em;
+  width: 14em;
   padding-left: 50px;
 }
 .nav-logo {
-  width: 40%;
-  height: 13vh;
+  height: 15vh;
+  width: 25em;
   padding-left: 50px;
 }
 /*nav rigth*/
