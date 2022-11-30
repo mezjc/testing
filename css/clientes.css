@@ -257,9 +257,15 @@ ul {
     padding-left: 20px;
   }
   .showcase .imagen {
-    width: 270px
+    width: 100%;
   }
+  .text h3 {
+    font-size: 30px;
+}
   .showcase{
     grid-template-columns: 2fr 5fr;
   }
+  .nav-logo {
+    width: 10em;
+}
 }
