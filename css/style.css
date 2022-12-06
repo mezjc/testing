@@ -37,6 +37,7 @@ ul {
   width: 100%;
   transition: 0.6s;
   height: 10vh;
+  z-index: 200;
 }
 .active .nav-logo {
   height: 10vh;
@@ -92,49 +93,27 @@ ul {
   justify-content: center;
 }
 .showcase h2 {
+  
   font-size: 15rem;
   font-weight:500;
-  padding-right: 300px;
+  padding-right: 200px;
   font-family: "teko", sans-serif;
   color: #10388f;
-  padding-bottom: 0;
+  padding-bottom: 0px;
   font-style: italic;
+  margin-bottom: 0px;
 }
 .showcase p {
   color: #ffffff;
   font-family: "Teko", sans-serif;
   font-size: 50px;
-  padding-right: 10rem;
+  padding-right: 80px;
 }
 .showcase span{
   color: #ED1C24;
 }
- /* mision-vision  */
-.mision-vision{
-  display: flex;
-  align-items: center;
-  padding: 8rem 10rem 8rem 15rem;
-  justify-content: space-between;
-  font-family: "Teko", sans-serif;
-}
-.texto-mision h3{
-  font-size: 2.0rem;
-  color: #FB2D0C;
-  font-family: "Teko", sans-serif;
-}
-.texto-mision p{
-  font-size: 1.3rem;
-  padding-top: 10px;
-  padding-bottom: 3rem;
-  width: 30rem;
-  text-align: justify;
-  color: #11398C;
-}
 
-.mision-vision img{
-border-radius: 10%;
-height: 40rem;
-}
+
 /* valor-agregado */
 .valor-agregado{
   display: flex;
@@ -153,10 +132,13 @@ width: 300px;
 }
 .valores h3{
   font-family: "Teko", sans-serif;
+  color: #10388f;
 }
 .valores p{
   padding-top: 20px;
   font-size: 1.2em;
+  color: #10388f;
+  font-weight: 500;
 }
 
 /* texto-centro */
@@ -164,6 +146,8 @@ width: 300px;
   text-align: center;
   font-family: "Teko", sans-serif;
   font-size: 4rem;
+  color: #FB2D0C;
+  padding-top: 30px;
 }
 /* slider */
 .carrusel{
@@ -211,6 +195,7 @@ width: 300px;
   text-align: center;
   font-family: "Teko", sans-serif;
   font-size: 70px;
+  color: #10388f;
 }
 .empresas {
   display: grid;
@@ -273,9 +258,67 @@ width: 300px;
   font-size: 3rem;
 }
 
+/* slider 2 */
+.contenedor{
+  width: 100%;
+  overflow: hidden;
+}
+.slider-contenedor{
+  width: 100%;
+  display: flex;
+  height: 65%;
+}
+
+.contenido-slider{
+  width: 100%;
+  height: 600px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-shrink: 0;
+  color: #10388f;
+}
+.contenido-slider img{
+  border-radius: 15px;
+}
+/* .contenido-slider:nth-child(2){
+
+  color: #10388f;
+}
+.contenido-slider:nth-child(3){
+
+  color: #10388f;
+} */
+
+.contenido-slider>img{
+  width: 400px;
+}
+
+
+.contenido-slider > div{
+  width: 40%;
+}
+
+.contenido-slider h2{
+  font-weight: 300;
+  text-align: justify;
+  line-height: 30px;
+}
+.contenido-slider a{
+  color:#fff;
+  background-color: #10388f;
+  width: 100px;
+  display: block;
+  padding: 15px 0;
+  text-align: center;
+  border-radius: 3px;
+  margin-top: 20px;
+  text-decoration: none;
+}
+
 /* footer links */
 .footer-links {
-  background: #031e41;
+  background: #12396b;
   /* background-color: #1c2024; */
   padding: 35px 0;
   font-family: roboto;
@@ -304,43 +347,17 @@ width: 300px;
 .footer-container ul {
   margin: 0 auto;
 }
-
-@media (max-width: 1440px) {
-
-  .mision-vision{
-    padding-left: 8rem;
-  }
-  .mision-vision img{
-    height:35em;
-  }
-}
 @media (max-width: 1230px) {
   .showcase {
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
     url("../img/img-principal.jpg") no-repeat left center/cover;
   }
   .showcase h2{
-    padding-right: 0;
+    padding-right: 100px;
   }
   .showcase p{
     padding-right: 0;
   }
-  .mision-vision{
-    display: flex;
-    padding: 4rem 5rem 7rem 7rem;
-  }
-  .texto-mision h3{
-    font-size: 1.7rem;
-  }
-  .texto-mision p{
-    font-size: 1.1rem;
-    padding-bottom: 3rem;
-    width: 20rem;
-  }
-  .mision-vision img{
-    
-      height: 30em;
-    }
     .carrusel{
       height: 300px;
       margin-bottom: 30px;
@@ -379,28 +396,13 @@ width: 300px;
   .showcase h2{
     font-size: 200px;
     padding-left: 330px;
+    padding-right: 0px;
   }
   .showcase p {
     padding-left: 440px;
   }
-  .mision-vision img{
-    display: none;
-  }
   .new-cards {
     grid-template-columns: repeat(1, 1fr);
-  }
-  .mision-vision{
-    display: flex;
-    padding: 7rem 0rem 7rem 3rem;
-    justify-content: center;
-  }
-  .texto-mision h3{
-    font-size: 1.6rem;
-  }
-  .texto-mision p{
-    font-size: 1.4rem;
-    padding-bottom: 3rem;
-    width: 20rem;
   }
 
   /* slider */
@@ -517,23 +519,11 @@ width: 300px;
     padding-right: 9rem;
     padding-left: 0px;
   }
-  .mision-vision{
-    display: flex;
-    padding-left: 1rem;
-    justify-content: center;
-  }
   .valor-agregado{
     flex-direction: column;
     align-items: center;
   }
-  .texto-mision h3{
-    font-size: 1.2rem;
-  }
-  .texto-mision p{
-    font-size: 1.1rem;
-    padding-bottom: 3rem;
-    width: 16rem;
-  }
+
   .contacto img {
     width: 100%;
     height: 350px;
@@ -546,5 +536,29 @@ width: 300px;
   }
   .diferencias .card{
     width: 12rem;
+  }
+}
+/* slider 2 */
+
+
+@media screen and (max-width:900px){
+  .contenido-slider > img{
+    width: 250px
+  }
+  .contenido-slider >div{
+    width: 40%;
+  }
+  .contenido-slider h2{
+    font-size: 23px;
+  }
+  
+}
+
+@media screen and (max-width:600px){
+  .contenido-slider {
+    flex-direction: column-reverse;
+  }
+  .contenido-slider >div{
+    width: 80%;
   }
 }
